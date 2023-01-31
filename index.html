@@ -1,11 +1,15 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study - Responsive One Page HTML Template Preview - ThemeForest</title>
+    <link rel="icon" href="education.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -18,147 +22,119 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<!-- <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 <script>
-  // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+    function aboutus(){
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
+        var name,course,phone,email;
+    name=document.getElementById("name").value;
+    course=document.getElementById("course").value;
+    phone=document.getElementById("phone").value;
+    email=document.getElementById("email").value;
+
+    var data={"Name":name,"Course":course,"Phone":phone,"Email":email};
+    console.log(data);
     }
-   
-}
+    
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
- 
-     $('html, body').animate({scrollTop:0}, 'slow');
-}
-</script> -->
-    <style>
-        .form-main {
-            background-color: #EAFDFC;
-            padding: 20px;
-        }
-        .form-des{
-            border: none;
-            height:3em;
-            width:30em;
-        }
-        input::placeholder{
-            font-weight: lighter;
-            padding-left: 1em;
-        }
-    </style>
+</script>
+
 </head>
-<body>
 
-<!-- <button onclick="topFunction()" id="myBtn" title="Go to top"><h3>&#8593;</h3></button> -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light navcolor">
+<body>
+   
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color:#072445;">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assest/logo.png" id="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#carouselExampleControls" id="textcol">HOME</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about" id="textcol">ABOUT US</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#services" id="textcol">SERVICES</a>
-              </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#faculty" id="textcol">OUR TEAM</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#client" id="textcol">TESTIMONIALS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#port" id="textcol">PORTFOLIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#blog" id="textcol">ABOUT US</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact" id="textcol">CONTACT US</a>
-              </li>
-          </ul>
+            <a class="navbar-brand" href="#"><img src="assest/logo.png" height="40px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto m-3">
+                    <a class="nav-link " id="nav-text-color" href="#home">HOME</span></a>
+                    <a class="nav-link " id="nav-text-color" href="#about">ABOUT US</a>
+                    <a class="nav-link " id="nav-text-color" href="#services">SERVICES</a>
+                    <a class="nav-link " id="nav-text-color" href="#faculty">OUR TEAM</a>
+                    <a class="nav-link " id="nav-text-color" href="#testimonial">TESTIMONIALS</a>
+                    <a class="nav-link " id="nav-text-color" href="#portfolio">PORTFOLIO</a>
+                    <a class="nav-link " id="nav-text-color" href="#contact">CONTACT US</a>
+                </div>
+            </div>
         </div>
+    </nav>
+
+        <!-- /********************HOME PAGE****************/ -->
+
+
+        <section id="home" style="position: relative;top:-.5em;background-color: white;">
+        <div id="carouselExampleControls" class="carousel slide caro" data-ride="carousel">
+            <div class="carousel-inner" style="height: 600px;">
+                <div class="carousel-item active">
+                    <img src="assest/img1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assest/img2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="assest/img3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
         </div>
-      </nav>
-      
-<!------------------------home----------------------->
-      <div id="carouselExampleControls" class="carousel slide caro" data-ride="carousel">
-        <div class="carousel-inner" style="height: 680px;">
-          <div class="carousel-item active">
-            <img src="assest/img1.jpg" class="d-block w-100" id="img" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assest/img2.jpg" class="d-block w-100" id="img" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assest/img3.jpg" class="d-block w-100" id="img" alt="...">
-          </div>
+        <div class="cont col-sm-12">
+            <h1 class="heading">Best design for Education</h1>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="btn btn-warning contbtn">CONTACT</button>
         </div>
-       <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </button>
-      </div>
-      <div class="cont">
-        <div class="row" style="position: relative;bottom: 7em;">
-            <div class="col-lg-12 col-sm-12">
-                <h2 style="font-weight: bold;">Best Design For Education</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
-            <button class="btn btn-warning btncon">contact</button>
+        <div class="main-homec">
+                <div class="row">
+                <div class="homebox col-lg-3 row-sm-12">
+                    <div class="homec">
+                        <h4>Scholarship Facility</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div>
+                        <img src="assest/con111.png" alt="" height="50px" width="50px" class="homei">
+                    </div>
+    
+                </div>
+                <div class="homebox col-lg-3 row-sm-12">
+                    <div class="homec ">
+                        <h4>Online Courses</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div>
+                        <img src="assest/user1.png" alt="" height="50px" width="50px" class="homei">
+                    </div>
+                </div>
+                <div class="homebox col-lg-3 row-sm-12">
+                    <div class="homec">
+                        <h4>Book Library</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div>
+                        <img src="assest/open-book.png" alt="" height="50px" width="50px" class="homei">
+                    </div>
+                </div>
+            </div>
             </div>
             
-        </div>
-      </div>
-      <div class="container">
-      <div class="main-homecon row">
-        <div class="col-lg-3 col-sm-12 mt-3 order-3">
-            <div class="homec">
-                <img id="conimg" src="assest/con111.png">
-                <h4 id="font">Scholarship Facility</h4>
-                <P>Lorem ipsum dolor consecteturs<br>adipiscing elit</P>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-12 mt-3 order-2">
-        <div class="homec">
-          <img id="conimg" src="assest/user1.png">
-            <h4 id="font">Online Facility</h4>
-            <P>Lorem ipsum dolor consecteturs<br>adipiscing elit</P>
-        </div>
-       </div>
-       <div class="col-lg-3 col-sm-12 mt-3 order-1">
-        <div class="homec">
-          <img id="conimg" src="assest/open-book.png">
-            <h4 id="font">Book Facility</h4>
-            <P>Lorem ipsum dolor consecteturs<br>adipiscing elit</P>
-        </div>
-        </div>
-      </div>
-      </div>
+    
+    </section>
 
+    <!-- /********************ABOUT US****************/ -->
 
-      <section class="container" id="about">
+   
+ <section  id="about" style="position: relative;bottom: 1em;background-color: white;">
+    <div class="container">
         <div style="text-align: center;">
             <h1>About us</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
@@ -167,7 +143,7 @@ function topFunction() {
         <br><br><br>
         <div class="row">
                 <div class="col-lg-6 col-sm-12">
-                    <h3 style="color:#0A2647;font-family: 'Roboto Condensed', sans-serif;font-weight: 600;">Welcome to our website</h3>
+                    <h3 style="color:#001f46;font-family: 'Roboto Condensed', sans-serif;font-weight: 600;">Welcome to our website</h3>
                     <p style="font-family: 'Roboto', sans-serif;font-weight:300;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dolorum blanditiis quidem vel
                         voluptates sit at, atque corporis culpa? Odit laborum in commodi vitae aliquam voluptatem dicta,
                         repellat amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eaque rem fugiat
@@ -189,448 +165,531 @@ function topFunction() {
                     <br>
                     
                 </div>
-                <div class="col-lg-6 col-sm-12"  >
+                <div class="form-main">
+                    <h3 class="heading">Get Us to call you back</h3>
+
+                    <input class="form-control mt-3" type="text" id="name" placeholder="Full name">
+                    <input class="form-control mt-3" type="text" id="course" placeholder="Course of interest">
+                    <input class="form-control mt-3" type="text" id="phone" placeholder="phone no">
+                    <input class="form-control mt-3" type="text" id="email" placeholder="Email">
+                    <button class="btn btn-warning button mt-3" onclick="aboutus()">submit</button>
+                </div>
+                <!-- <div class="col-lg-6 col-sm-12"  >
                     <form action="" class="form-main">
                         <table>
-                            <h3 style="color: #0A2647;font-family: 'Roboto Condensed', sans-serif;font-weight: 600;">Get us to call you back</h3>
+                            <h3 style="color: #001f46;font-family: 'Roboto Condensed', sans-serif;font-weight: 600;">Get us to call back you</h3>
                             <br>
                             <tr>
-                                <td><input class="form-des"type="text" placeholder="Full name"></td>
+                                <td><input class="form-control"type="text" placeholder="Full name"></td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td><input class="form-des"type="text" placeholder="Course of intereset"></td>
+                                <td><input class="form-control" type="text" placeholder="Course of intereset"></td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td><input class="form-des"type="text" placeholder="Phone number"></td>
+                                <td><input class="form-control" type="text" placeholder="Phone number"></td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td><input class="form-des"type="text" placeholder="Email"></td>
+                                <td><input class="form-control" type="text" placeholder="Email"></td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td><button class="btn btn-warning btncon">Submit</button></td>
+                                <td><button class="btn btn-warning sub">Submit</button></td>
                             </tr>
                         </table>
                     </form>
-            </div>
+            </div> -->
 
         </div>
+    </div>    
     </section>
 
-    <!--------------------SERVICES PAGE------------------------->
-    
-    <section class="container1" id="services">
-    <div class="serfon" style="text-align: center;">
-      <h1>OUR SERVICES</h1>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy<br>
-        nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p> 
-        <img src="assest/pin.png" height="60px" width="60px">
+    <!-- /********************SERVICES****************/ -->
+
+    <section class="bg-light pt-5" id="services" style="position: relative;bottom: 1em;">
+        <div class="container">
+            <div style="text-align: center;">
+                <h2 style="font-family: 'Sofia Sans', sans-serif;font-weight: bolder;">OUR SERVICES</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                <img src="assest/pin.png" height="60px" width="60px">
+            </div>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-3 col-sm-12 service-box-1" id="service-box">
+                    <!-- <img src="laptop.png" alt="" height="50px" id="im" width="50px" onmouseover="servicebox()"> -->
+                    <br><br>
+                    <p style="font-family: 'Sofia Sans', sans-serif;font-weight: 800;font-size: 1.3em;">Fully Responsive
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-lg-3 col-sm-12 service-box-2" id="service-box">
+                    <!-- <img src="pencil.png" alt="" height="50px" width="50px"> -->
+                    <br><br>
+                    <p style="font-family: 'Sofia Sans', sans-serif;font-weight: 800;font-size: 1.3em;">Clean design</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-lg-3 col-sm-12 service-box-3" id="service-box">
+                    <!-- <img src="retina.png" alt="" height="50px" width="50px"> -->
+                    <br><br>
+                    <p style="font-family: 'Sofia Sans', sans-serif;font-weight: 800;font-size: 1.3em;">Retina ready</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-3 col-sm-12 service-box-4" id="service-box">
+                    <br><br>
+                    <p style="font-family: 'Sofia Sans', sans-serif;font-weight: 800;font-size: 1.3em;">Graduation</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-lg-3 col-sm-12 service-box-5" id="service-box">
+                    <br><br>
+                    <p style="font-family: 'Sofia Sans', sans-serif;font-weight: 800;font-size: 1.3em;">Customer suport
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-lg-3 col-sm-12 service-box-6" id="service-box">
+                    <br><br>
+                    <p style="font-family: 'Sofia Sans', sans-serif;font-weight: 800;font-size: 1.3em;">Marketing</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        
+    </section >
+    <div style="position: relative;bottom: 1em;z-index: 9;background-color: #001f46; opacity: 0.8; ">
+        <div class="container">
+            <div class="row" style="color: white;">
+                <div class="col-lg-3 col-sm-12" style="text-align: center;padding: 15px;">
+                    <div >
+                        <img src="assest/clock.png" alt="" height="50px" width="50px">
+                    </div><br>
+                    <h3>5325</h3>
+                    <p>Hours of lesson</p>
+                </div>
+                <div class="col-lg-3 col-sm-12" style="text-align: center;padding: 15px;">
+                    <div >
+                        <img src="assest/user1.png" alt="" height="50px" width="50px">
+                    </div>
+                    <br>
+                    <h3>160</h3>
+                    <p >Satisfied students</p>
+                </div>
+                <div class="col-lg-3 col-sm-12" style="text-align: center;padding: 15px;">
+                    <div >
+                        <img src="assest/lapt.png" alt="" height="50px" width="50px">
+                    </div>
+                    <br>
+                    <h3 >530</h3>
+                    <p >Courses</p>
+                </div>
+                <div class="col-lg-3 col-sm-12" style="text-align: center;padding: 15px;">
+                    <div>
+                        <img src="assest/like.png" alt="" height="50px" width="50px">
+                    </div>
+                    <br>
+                    <h3 >49</h3>
+                    <p >Awards won</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- ********** OUR TEAMS OR FACULTY *********-->
+
+
+<section id ="faculty" class="p-5" style="background-color: white;position: relative;bottom:1em">
     <div class="container">
-        <div class="main-homecon1">
+        <div style="text-align: center;">
+                <h2 style="font-family: 'Sofia Sans', sans-serif;font-weight: bolder;">OUR FACULTY</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                <img src="assest/pin.png" height="60px" width="60px">
+            </div>
+            <br><br>
+        <div class="row ">
+            <div class="col-lg-3 col-sm-12  ">
+                <div class="faculty-box mt-4">
+                    <img src="assest/our-team1.jpg" alt="" class="person">
+                <h4>Chandru</h4>
+                <p>CEO</p>
+                <div class="grid-cont">
+                    <img src="assest/facebook.png" alt="" class="grid-item" height="30px" width="30px">
+                    <img src="assest/google.png" alt="" class="grid-item" height="30px" width="30px">
+                    <img src="assest/twitter.png" alt="" class="grid-item" height="30px" width="30px">
+                    <img src="assest/pinterest.png" alt="" class="grid-item" height="30px" width="30px">
+                </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-sm-12    ">
+                <div class="faculty-box mt-4">
+                    <img src="assest/our-team2.jpg" alt="" class="person">
+                <h4>Aathithyan</h4>
+                <p>Founder</p>
+                <div class="grid-cont">
+                    <img src="assest/facebook.png" alt="" class="grid-item" height="30px" width="30px">
+                    <img src="assest/google.png" alt="" class="grid-item" height="30px" width="30px">
+                    <img src="assest/twitter.png" alt="" class="grid-item" height="30px" width="30px">
+                    <img src="assest/pinterest.png" alt="" class="grid-item" height="30px" width="30px">
+                </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-sm-12    ">
+                <div class="faculty-box mt-4">
+                    <img src="assest/our-team3.jpg" alt="" class="person">
+                <h4>Ramji</h4>
+                <p>Project manager</p>
+                <div class="grid-cont">
+                    <img src="assest/facebook.png" alt="" class="grid-item" height="30px" width="30px">
+                    <img src="assest/google.png" alt="" class="grid-item" height="30px" width="30px">
+                    <img src="assest/twitter.png" alt="" class="grid-item" height="30px" width="30px">
+                    <img src="assest/pinterest.png" alt="" class="grid-item" height="30px" width="30px">
+                </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-3 col-sm-12    ">
+                <div class="faculty-box mt-4">
+                    <img src="assest/our-team4.jpg" alt="" class="person">
+                    <h4>Roshan</h4>
+                    <p>Developer</p>
+                    <div class="grid-cont">
+                        <img src="assest/facebook.png" alt="" class="grid-item" height="30px" width="30px">
+                        <img src="assest/google.png" alt="" class="grid-item" height="30px" width="30px">
+                        <img src="assest/twitter.png" alt="" class="grid-item" height="30px" width="30px">
+                        <img src="assest/pinterest.png" alt="" class="grid-item" height="30px" width="30px">
+                    </div>
+                </div>
+               
+            </div>
+        </div>  
+    </div>
+</section>
+
+<!--************** TESTIMONIAL****************-->
+
+<section id="testimonial" style="position: relative;bottom: 1em;  background-color: #001f46; opacity: 0.8;">
+    <div class="client-bg mt-2">
+        <div class="container" >
             <div class="row">
-                <div class="col-md-4 col-sm-12 mt-2 ">
-                    <div class="serc" >
-                        <img id="serimg" src="assest/lap.png">
-                            <h4 id="font1">Fully Responsive</h4>
-                            <p>-------------------------------</p>
-                            <P>Lorem ipsum ipsum ipsum dolor sit amet,<br> adipiscing. Lorem ipsum dolor sit amet,<br> consectetuer adipiscing.</P>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 mt-2">
-                    <div class="serc" >
-                        <img id="serimg" src="assest/lap.png">
-                            <h4 id="font1">Fully Responsive</h4>
-                            <p>-------------------------------</p>
-                            <P>Lorem ipsum ipsum ipsum dolor sit amet,<br> adipiscing. Lorem ipsum dolor sit amet,<br> consectetuer adipiscing.</P>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 mt-2">
-                    <div class="serc" >
-                        <img id="serimg" src="assest/lap.png">
-                            <h4 id="font1">Fully Responsive</h4>
-                            <p>-------------------------------</p>
-                            <P>Lorem ipsum ipsum ipsum dolor sit amet,<br> adipiscing. Lorem ipsum dolor sit amet,<br> consectetuer adipiscing.</P>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 mt-3">
-                    <div class="serc" >
-                        <img id="serimg" src="assest/lap.png">
-                            <h4 id="font1">Fully Responsive</h4>
-                            <p>-------------------------------</p>
-                            <P>Lorem ipsum ipsum ipsum dolor sit amet,<br> adipiscing. Lorem ipsum dolor sit amet,<br> consectetuer adipiscing.</P>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 mt-3">
-                    <div class="serc" >
-                        <img id="serimg" src="assest/lap.png">
-                            <h4 id="font1">Fully Responsive</h4>
-                            <p>-------------------------------</p>
-                            <P>Lorem ipsum ipsum ipsum dolor sit amet,<br> adipiscing. Lorem ipsum dolor sit amet,<br> consectetuer adipiscing.</P>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 mt-3">
-                    <div class="serc" >
-                        <img id="serimg" src="assest/lap.png">
-                            <h4 id="font1">Fully Responsive</h4>
-                            <p>-------------------------------</p>
-                            <P>Lorem ipsum ipsum ipsum dolor sit amet,<br> adipiscing. Lorem ipsum dolor sit amet,<br> consectetuer adipiscing.</P>
-                    </div>
+                <div class=" col-12 pt-5 nav-text-color about-style" style="color: white;text-align: center;">
+                    <h1>CLIENT TESTIMONIAL</h1>
+                    <p class="about-style">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    <img src="assest/pin.png" height="50px" width="50px">
                 </div>
             </div>
-            
-        </div>
-      </div>
-      <!-- <div class="container main-homecon1">
-        <div class="serc" >
-          <img id="serimage" src="assest/graduation.png">
-            <h4 id="font1">Graduation</h4>
-            <p>-----------------------</p>
-            <P>Lorem ipsum ipsum ipsum dolor sit amet,<br> adipiscing. Lorem ipsum dolor sit amet,<br> consectetuer adipiscing.</P>
-        </div>
-        <div class="serc">
-          <img id="serimage" src="assest/user.png">
-            <h4 id="font1">Customer Support</h4>
-            <p>-----------------------------------</p>
-            <P>Lorem ipsum ipsum ipsum dolor sit amet,<br> adipiscing. Lorem ipsum dolor sit amet,<br> consectetuer adipiscing.</P>
-        </div>
-        <div class="serc">
-          <img id="serimage" src="assest/envelope.png">
-            <h4 id="font1">Marketing</h4>
-            <p>-------------------</p>
-            <P>Lorem ipsum ipsum ipsum dolor sit amet,<br> adipiscing. Lorem ipsum dolor sit amet,<br> consectetuer adipiscing.</P>
-        </div>
-        </div> -->
-
-    </section>
-    <section >
-        <div class="main-sercon">
-        <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-12">
-                        <div class="sercon">
-                            <img id="serimage" src="assest/clock.png">
-                            <h4>5325</h4>
-                            <p>Hours Of Lessions</p>
-                          </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12">
-                        <div class="sercon">
-                            <img id="serimage" src="assest/user1.png">
-                            <h4>160</h4>
-                            <p>Satisfied students</p>
-                          </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12">
-                        <div class="sercon">
-                            <img id="serimage" src="assest/lapt.png">
-                            <h4>530</h4>
-                            <p>Courses</p>
-                          </div>
-                    </div>
-                      <div class="col-lg-3 col-sm-12">
-                      <div class="sercon">
-                        <img id="serimage" src="assest/like.png">
-                        <h4>49</h4>
-                        <p>Awards Own</p>
-                      </div>
-                </div>
-              </div>
-        </div>
-        </div>
-      
-    </section>
-    <!-------------------FACULTY PAGE-------------------------->
-    <section class="container11" id="faculty">
-      <div class="serfon" style="text-align: center;">
-        <h1>OUR FACULTY</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy<br>
-          nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p> 
-          <img src="assest/pin.png" height="60px" width="60px">
-      </div>
-      <div class="main-homecon1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
-                    <div class="fac" >
-                        <img id="facimg" src="assest/our-team1.jpg">
-                            <h4 id="font2">Person Name</h4>
-                            <P>Designation</P>
-                            <img id="logos" src="assest/facebook.png">
-                            <img id="logos" src="assest/google.png">
-                            <img id="logos" src="assest/twitter.png">
-                            <img id="logos" src="assest/pinterest.png">
-                        </div>
-                </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
-                        <div class="fac">
-                            <img id="facimg" src="assest/our-team2.jpg">
-                              <h4 id="font2">Person Name</h4>
-                              <P>Designation</P>
-                              <img id="logos" src="assest/facebook.png">
-                              <img id="logos" src="assest/google.png">
-                              <img id="logos" src="assest/twitter.png">
-                              <img id="logos" src="assest/pinterest.png">
-                          </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
-                        <div class="fac">
-                            <img id="facimg" src="assest/our-team3.jpg">
-                              <h4 id="font2">Person Name</h4>
-                              <P>Designation</P>
-                              <img id="logos" src="assest/facebook.png">
-                              <img id="logos" src="assest/google.png">
-                              <img id="logos" src="assest/twitter.png">
-                              <img id="logos" src="assest/pinterest.png">
-                          </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 mt-2">
-                        <div class="fac">
-                            <img id="facimg" src="assest/our-team4.jpg">
-                              <h4 id="font2">Person Name</h4>
-                              <P>Designation</P>
-                              <img id="logos" src="assest/facebook.png">
-                              <img id="logos" src="assest/google.png">
-                              <img id="logos" src="assest/twitter.png">
-                              <img id="logos" src="assest/pinterest.png">
-                          </div>
-                    </div>
-            </div>
-            </div>
-      </div>
-        </section>
-
-        <!-----------------CLIENT TESTIMONIAL------------------------->
-        <section class="container2" id="client">
-          <div class="serfon" style="text-align: center;">
-            <h1>CLIENT TESTIMONIAL</h1>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy<br>
-              nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p> 
-              <img src="assest/pin.png" height="60px" width="60px">
-          </div>
-          <div class="main-faccon1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-sm-12 mt-5">
-                        <div class="facc" >
-                            <img id="faccimg" src="assest/tes-img3.jpg">
-                                <h4 id="font1">Sunidhi Sargam</h4>
-                                <h6>Company Name</h6>
-                                <P>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et.Lorem ipsum dolor sit<br> amet, consectetur adipisicing elit, sed do<br> eiusmod tempor.</P>
-                            </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12 mt-5">
-                        <div class="facc">
-                            <img id="faccimg" src="assest/tes-img2.jpg">
-                              <h4 id="font1">Arjith Singh</h4>
-                              <h6>Company Name</h6>
-                              <P>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et.Lorem ipsum dolor sit<br> amet, consectetur adipisicing elit, sed do<br> eiusmod tempor.</P>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-12 mt-5">
-                        <div class="facc">
-                            <img id="faccimg" src="assest/tes-img1.jpg">
-                              <h4 id="font1">ARMAN MALIK</h4>
-                              <h6>Company Name</h6>
-                              <P>Lorem ipsum dolor sit amet, consectetur<br> adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et.Lorem ipsum dolor sit<br> amet, consectetur adipisicing elit, sed do<br> eiusmod tempor.</P>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </section>
-
-            <!--------------PORTFOLIO----------------->
-            <section class="container11" id="port">
-              <div class="serfon" style="text-align: center;">
-                <h1>OUR PORTFOLIO</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy<br>
-                  nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p> 
-                  <img src="assest/pin.png" height="60px" width="60px">
-              </div>
-              <div class="box">
-                <ul class="list-group">
-                  <li class="list-group-item">ALL</li>
-                  <li class="list-group-item">WORDPRESS</li>
-                  <li class="list-group-item">JQUERY</li>
-                  <li class="list-group-item">HTML</li>
-                  <li class="list-group-item">PHP</li>
-              </ul>
-              </div>
-              </div>
-              <div class="main-homecon1">
-              <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                        <div class="galc" >
-                            <img id="galimg" src="assest/gallery-img1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                        <div class="galc" >
-                            <img id="galimg" src="assest/gallery-img2.jpg">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                        <div class="galc" >
-                            <img id="galimg" src="assest/gallery-img3.jpg">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                        <div class="galc" >
-                            <img id="galimg" src="assest/gallery-img4.jpg">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                        <div class="galc" >
-                            <img id="galimg" src="assest/gallery-img5.jpg">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                        <div class="galc" >
-                            <img id="galimg" src="assest/gallery-img6.jpg">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                        <div class="galc" >
-                            <img id="galimg" src="assest/gallery-img3.jpg">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                        <div class="galc" >
-                            <img id="galimg" src="assest/gallery-img1.jpg">
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
-                        <div class="galc" >
-                            <img id="galimg" src="assest/gallery-img9.jpg">
-                        </div>
-                    </div>
-                </div>
-              </div>
-                </div>
-              </section>
-
-              <!--------------BLOG------------------->
-              <section class="container2" id="blog">
-                <div class="blocon" style="text-align: center;">
-                  <h1>OUR BLOG</h1>
-                </div>
-                <div class="main-blocon1">
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-12 mt-3">
-                                <div class="blo" >
-                                    <img id="bloimg" src="assest/blog1.jpg">
-                                    <img id="call" src="assest/calendar.png"><p id="font4">12 dec 2016</p>
-                                    <img id="com" src="assest/calendar.png"><p id="font5">30 comment</p>
-                                        <h4 id="font3">BLOG POST TITLE HERE</h4>
-                                        <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
-                                        <button class="btn btn-warning btnblo">Read More</button>
-                                </div>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-12 col-md-3 ml-2 mt-3 mb-5 p-3 client-card ">
+                                <img class="image-resize" src="assest/tes-img1.jpg" height="100px" width="100px">
+                                <h4 style="font-weight:bold;">Sunidhi Sargam</h4>
+                                <h6 style="font-weight:bold;">Company name</h6>
+                                <p>Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. </p>
                             </div>
-                            <div class="col-lg-4 col-sm-12 mt-3">
-                                <div class="blo">
-                                    <img id="bloimg" src="assest/blog2.jpg">
-                                    <img id="call" src="assest/calendar.png"><p id="font4">12 dec 2016</p>
-                                    <img id="com" src="assest/calendar.png"><p id="font5">30 comment</p>
-                                      <h4 id="font3">BLOG POST TITLE HERE</h4>
-                                      <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
-                                      <button class="btn btn-warning btnblo">Read More</button>  
-                                </div>
+                            <div class="col-sm-12 col-md-3 ml-2 mb-5 mt-3 p-3 client-card ">
+                                <img class="image-resize" src="assest/tes-img2.jpg" height="100px" width="100px">
+                                <h4 style="font-weight:bold;">Sunidhi Sargam</h4>
+                                <h6 style="font-weight:bold;">Company name</h6>
+                                <p>Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. </p>
                             </div>
-                            <div class="col-lg-4 col-sm-12 mt-3">
-                                <div class="blo">
-                                    <img id="bloimg" src="assest/blog3.jpg">
-                                    <img id="call" src="assest/calendar.png"><p id="font4">12 dec 2016</p>
-                                    <img id="com" src="assest/calendar.png"><p id="font5">30 comment</p>
-                                      <h4 id="font3">BLOG POST TITLE HERE</h4>
-                                      <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</P>
-                                      <button class="btn btn-warning btnblo">Read More</button>  
-                                </div>
+                            <div class="col-sm-12 col-md-3 ml-2 mb-5 mt-3 p-3 client-card">
+                                <img class="image-resize" src="assest/tes-img3.jpg" height="100px" width="100px">
+                                <h4 style="font-weight:bold;">Sunidhi Sargam</h4>
+                                <h6 style="font-weight:bold;">Company name</h6>
+                                <p>Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. </p>
                             </div>
                         </div>
                     </div>
                   </div>
-                  </section>
-                  <br>
-
-                  <!-----------CONTACT---------------->
-                  <section id="contact" class="mt-5">
-                    <div  style="background-color: blue; color: white;padding: 30px;">
-                        <div class="container">
-                            <div style="text-align: center;">
-                                <h2 style="font-family: 'Sofia Sans', sans-serif;font-weight: bolder;">CONTACT US</h2>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-                                <img src="assest/pin.png" height="60px" width="60px">
-                            </div><br><br>
-                            <div class="container" style="margin-left: 9em;">
-                                <div class="row">
-                                    <div class="col-lg-3 col-sm-12 contact-box">
-                                        <img src="assest/smartphone.png" alt="" height="80px" width="80px"><br><br>
-                                        <p>8667662525</p>
-                                    </div>
-                                    <div class="col-lg-3 col-sm-12 contact-box">
-                                        <img src="assest/locator.png" alt="" height="80px" width="80px"><br><br>
-                                        <p>Avaniyapuram,madurai</p>
-                                    </div>
-                                    <div class="col-lg-3 col-sm-12 contact-box">
-                                        <img src="assest/mail.png" alt="" height="80px" width="80px"><br><br>
-                                        <p>ramjits777@gmail.com</p>
-                                    </div>
-                                </div>
+                  <div class="carousel-item">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-12 col-md-3 ml-2 mb-5 mt-3 p-3 client-card ">
+                                <img class="image-resize" src="assest/tes-img1.jpg" height="100px" width="100px">
+                                <h4 style="font-weight:bold;">Sunidhi Sargam</h4>
+                                <h6 style="font-weight:bold;">Company name</h6>
+                                <p>Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.</p>
                             </div>
-                            
-                            <form action="" style="padding: 20px; margin-left: 11em;">
-                                <div class="row">
-                                    <div class="col-lg-5 col-sm-12 mt-3 mr-5" >
-                                        <input type="text" placeholder="Your name*" class="field">
-                                    </div>
-                                    <div class="col-lg-5 col-sm-12 mt-3 mr-5">
-                                        <input type="email" placeholder="Email*" class="field"> 
-                                    </div>
-                                    <div class="col-lg-6 col-sm-12 mt-3">
-                                        <textarea placeholder="Your message" cols="119" rows="6" ></textarea>
-                                    </div>
-                                    
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-4 col-sm-4">
-                                        <p>&nbsp;</p>
-                                    </div>
-                                    <div class="col-lg-4 col-sm-4">
-                                        <button class="btn btn-warning sub " style="margin-top: 2em;">Send message</button>  
-                                    </div>
-                                    <div class="col-lg-4 col-sm-4">
-                                        <p>&nbsp;</p>
-                                    </div>
-                                </div>
-                               
-                                
-                            </form>
-                           
+                            <div class="col-sm-12 col-md-3 ml-2 mb-5 mt-3 p-3 client-card ">
+                                <img class="image-resize" src="assest/tes-img2.jpg" height="100px" width="100px">
+                                <h4 style="font-weight:bold;">Sunidhi Sargam</h4>
+                                <h6 style="font-weight:bold;">Company name</h6>
+                                <p>Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. </p>
+                            </div>
+                            <div class="col-sm-12 col-md-3 ml-2 mt-3 mb-5 p-3 client-card">
+                                <img class="image-resize" src="assest/tes-img3.jpg" height="100px" width="100px">
+                                <h4 style="font-weight:bold;">Sunidhi Sargam</h4>
+                                <h6 style="font-weight:bold;">Company name</h6>
+                                <p>Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. </p>
+                            </div>
                         </div>
-                       
-                            <div  class="map-box">
-                                <iframe class=" map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4013436.3643496064!2d78.2885026!3d10.78283645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1674557523282!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-12 col-md-3 ml-2 mt-3 mb-5 p-2 client-card">
+                                <img class="image-resize" src="assest/tes-img1.jpg" height="100px" width="100px">
+                                <h4 style="font-weight:bold;">Sunidhi Sargam</h4>
+                                <h6 style="font-weight:bold;">Company name</h6>
+                                <p>Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. </p>
                             </div>
+                            <div class="col-sm-12 col-md-3 ml-2 mt-3 mb-5 p-2 client-card ">
+                                <img class="image-resize" src="assest/tes-img2.jpg" height="100px" width="100px">
+                                <h4 style="font-weight:bold;">Sunidhi Sargam</h4>
+                                <h6 style="font-weight:bold;">Company name</h6>
+                                <p>Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. </p>
+                            </div>
+                            <div class="col-sm-12 col-md-3 ml-2 mt-3 mb-5 p-2 client-card">
+                                <img class="image-resize" src="assest/tes-img3.jpg" height="100px" width="100px">
+                                <h4 style="font-weight:bold;">Sunidhi Sargam</h4>
+                                <h6 style="font-weight:bold;">Company name</h6>
+                                <p>Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing.Lorem ipsum ipsum ipsum dolor sit amet, adipiscing. </p>
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                  </section>
-                  <div class="p-2" style="text-align: center;background-color: white;position: relative;">
-                    <h5>Copyright 2023 study | all rights reserved</h5>
+                  </div>
                 </div>
+</section>
 
+<!--******* PORFOLIO ***************8-->
+
+<section id="portfolio" style="background-color: white;">
+    <div class="container">
+        <div style="text-align: center;">
+            <h1>OUR PORTFOLIO</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <img src="assest/pin.png" height="60px" width="60px">
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="all-tab" data-toggle="tab" data-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">ALL</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="wordpress-tab" data-toggle="tab" data-target="#wordpress" type="button" role="tab" aria-controls="wordpress" aria-selected="false">WORDPRESS</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="jquery-tab" data-toggle="tab" data-target="#jquery" type="button" role="tab" aria-controls="jquery" aria-selected="false">JQUERY</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link " id="php-tab" data-toggle="tab" data-target="#php" type="button" role="tab" aria-controls="php" aria-selected="true">PHP</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="html-tab" data-toggle="tab" data-target="#html" type="button" role="tab" aria-controls="html" aria-selected="true">HTML</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="css-tab" data-toggle="tab" data-target="#css" type="button" role="tab" aria-controls="css" aria-selected="true">CSS</button>
+                      </li>
+                  </ul>
+            </div>
+
+        </div>
+        
+       </div>
+        
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
+                <div class="container">
+                    <div class="row m-5">
+                        <img src="assest/gallery-img1.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img2.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img3.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img4.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img5.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img6.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img2.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img9.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img4.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                    </div>
+                </div>
+           </div>
+            <div class="tab-pane fade" id="wordpress" role="tabpanel" aria-labelledby="wordpress-tab">
+                <div class="container">
+                    <div class="row mt-4">
+                        <img src="assest/gallery-img2.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img9.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img1.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="jquery" role="tabpanel" aria-labelledby="jquery-tab">
+                <div class="container">
+                    <div class="row mt-4">
+                        <img src="assest/gallery-img9.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img6.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img4.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="php" role="tabpanel" aria-labelledby="php-tab">
+                <div class="container">
+                    <div class="row mt-4">
+                        <img src="assest/gallery-img3.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img9.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img6.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="html" role="tabpanel" aria-labelledby="html-tab">
+                <div class="container">
+                    <div class="row mt-4">
+                        <img src="assest/gallery-img5.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img3.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img1.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="css" role="tabpanel" aria-labelledby="css-tab">
+                <div class="container">
+                    <div class="row mt-4">
+                        <img src="assest/gallery-img2.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img4.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                        <img src="assest/gallery-img6.jpg" class="col-lg-4 col-sm-12 mt-4" alt="" height="250px" width="350px">
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <div style="text-align: center;margin-top: 20px;">
+                <h1>OUR BLOG</h1>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div class="blogbox">
+                            <img  src="assest/blog1.jpg" alt="" height="50%" width="100%">
+                            <div class="blogdetails">
+                                <i class="fa fa-calendar" aria-hidden="true" style="color: #FC7300;"></i> 12 dec 2016
+                                <i class="fa fa-comment" aria-hidden="true" style="color: #FC7300;"></i> Comments
+                                <h4>blog post title here</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                                <button class="btn btn" style="background-color: #001f46;  border-top-right-radius: 25px;border-bottom-left-radius: 25px;border-top-left-radius: 0%;border-bottom-right-radius: 0%; width:120px;color:white">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="blogbox">
+                            <img  src="assest/blog2.jpg" alt="" height="50%" width="100%">
+                            <div class="blogdetails">
+                                <i class="fa fa-calendar" aria-hidden="true" style="color: #FC7300;"></i> 12 dec 2016
+                                <i class="fa fa-comment" aria-hidden="true" style="color: #FC7300;"></i> Comments
+                                <h4>blog post title here</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                                <button class="btn btn" style="background-color: #001f46;  border-top-right-radius: 25px;border-bottom-left-radius: 25px;border-top-left-radius: 0%;border-bottom-right-radius: 0%; width:120px;color:white">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="blogbox">
+                            <img  src="assest/blog3.jpg" alt="" height="50%" width="100%">
+                            <div class="blogdetails">
+                                <i class="fa fa-calendar" aria-hidden="true" style="color: #FC7300;"></i> 12 dec 2016
+                                <i class="fa fa-comment" aria-hidden="true" style="color: #FC7300;"></i> Comments
+                                <h4>blog post title here</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</p>
+                                <button class="btn btn" style="background-color: #001f46;  border-top-right-radius: 25px;border-bottom-left-radius: 25px;border-top-left-radius: 0%;border-bottom-right-radius: 0%; width:120px;color:white">Read More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+          </div>
+    
+</section>
+
+  <!-- ********** CONTACT *********-->
+
+  <br><section id="contact" class="mt-5" style=" position: relative; bottom: 4.5em; background-color: #001f46; opacity: 0.8; justify-content: space-between;">
+    <div  style="color: white;padding: 30px;">
+        <div class="container ">
+            <div style="text-align: center;">
+                <h2 style="font-family: 'Sofia Sans', sans-serif;font-weight: bolder;">CONTACT US</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                <img src="assest/pin.png" height="60px" width="60px">
+            </div><br><br>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-sm-12 contact-box">
+                        <img src="assest/phone-call.png" alt="" height="80px" width="80px"><br><br>
+                        <p>8667662525</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 contact-box">
+                        <img src="assest/gps.png" alt="" height="80px" width="80px"><br><br>
+                        <p>Avaniyapuram,madurai</p>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 contact-box">
+                        <img src="assest/like1.png" alt="" height="80px" width="80px"><br><br>
+                        <p>ramjits777@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <form action="" style="padding: 20px; ">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-12 mt-3 mr-5" >
+                        <input type="text" placeholder="Your name*" class="form-control">
+                    </div>
+                    <div class="col-lg-5 col-sm-12 mt-3 mr-5">
+                        <input type="email" placeholder="Email*" class="form-control">
+                    </div>
+                    <div class="col-sm-12 mt-3">
+                        <textarea placeholder="Your message" rows="6" class="form-control"></textarea>
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-4">
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <button class="btn btn-warning sub">Send message</button>  
+                    </div>
+                    <div class="col-lg-4 col-sm-4">
+                        <p>&nbsp;</p>
+                    </div>
+                </div>
+               
+                
+            </form>
+           
+        </div>
+       
+            <div  class="map-box1">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4013436.3643496064!2d78.2885026!3d10.78283645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1674557523282!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </div>
+    </div>
+  </section>
+  <div class="p-2" style="text-align: center;background-color: white;position: relative;">
+    <h5>Copyright 2023 study | all rights reserved</h5>
+</div>
 </body>
+
 </html>
